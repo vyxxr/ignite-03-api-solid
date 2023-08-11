@@ -26,8 +26,8 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - run: yarn test:e2e
-      env:
-        JWT_SECRET: testing
-        DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
+        env:
+          JWT_SECRET: testing
+          DATABASE_URL: "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
 
 
